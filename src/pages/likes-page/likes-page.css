@@ -1,0 +1,18 @@
+.likes__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.likes__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #94999d;
+}
+
+.likes__block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,28 @@
+.auth {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+}
+
+.auth__form {
+  padding: 40px;
+  width: 360px;
+  background: #e1dee9;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.auth__block{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

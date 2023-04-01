@@ -1,0 +1,150 @@
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: calc(100vh - 105px);
+  padding: 20px 0;
+  padding-top: 125px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #064789;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: #f8f5f0;
+}
+
+.icon-link,
+.icon-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-link:hover,
+.icon-button:hover {
+  background-color: #f8f5f0;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f8f5f0;
+  padding: 10px 30px;
+  background: linear-gradient(180deg, #a491d3 0%, #d5cfe1 100%);
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button--blue {
+  background: linear-gradient(180deg, #064789 0%, #a491d3 100%);
+}
+
+.button--red {
+  background: linear-gradient(180deg, #d39191 0%, #f50c0c 100%);
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #d5cfe1 0%, #a491d3 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button--blue:hover {
+  background: linear-gradient(180deg, #a491d3 0%, #064789 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button--red:hover {
+  background: linear-gradient(180deg, #f50c0c 0%, #d39191 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #064789;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: 20px;
+  color: #000000;
+}
+
+.text + .text {
+  margin-top: 30px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #064789;
+}
+
+.input {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+  border: 1px solid #064789;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.tab-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 10px;
+  transition: all 0.1s;
+}
+
+.tab-link--active {
+  border-bottom: 3px solid #064789;
+  color: #064789;
+}
+
+.tab-link:hover {
+  border-bottom: 3px solid #064789;
+  color: #064789;
+}
+
+@media (max-width: 700px) {
+  .navigation {
+    display: none;
+  }
+}

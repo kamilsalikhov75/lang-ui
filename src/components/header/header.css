@@ -1,0 +1,18 @@
+.header {
+  background: #d5cfe1;
+  padding: 25px 0;
+  position: fixed;
+  width: 100vw;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__block {
+  display: flex;
+  gap: 30px;
+}

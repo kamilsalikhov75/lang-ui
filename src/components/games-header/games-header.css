@@ -1,0 +1,9 @@
+.games-header {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+.games-header__navigation {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}

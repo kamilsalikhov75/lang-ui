@@ -1,0 +1,12 @@
+.lang-block {
+  display: flex;
+  gap: 5px;
+  width: 55px;
+}
+
+.lang__button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}

@@ -1,0 +1,26 @@
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.progress__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.progress__block {
+  background: #f8f5f0;
+  border-radius: 30px;
+}
+
+.progress__block--large {
+  width: 600px;
+  height: 576px;
+}
+
+.progress__block--small {
+  width: 380px;
+  height: 172px;
+}

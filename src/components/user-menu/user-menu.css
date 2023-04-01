@@ -1,0 +1,30 @@
+.user-menu {
+  position: absolute;
+  right: 0;
+  bottom: -243px;
+  padding: 40px;
+  background: #e1dee9;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+
+.user-menu__link,
+.user-menu__button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #064789;
+}
+
+.user-menu__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
