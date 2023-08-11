@@ -9,6 +9,7 @@ import vkIcon from './assets/vk-icon.svg';
 import settingIcon from './assets/setting-icon.svg';
 import exitIcon from './assets/exit-icon.svg';
 import busketIcon from './assets/busket-icon.svg';
+import adminIcon from './assets/admin-icon.svg';
 
 export const icons = {
   enIcon,
@@ -22,4 +23,5 @@ export const icons = {
   settingIcon,
   exitIcon,
   busketIcon,
+  adminIcon
 };

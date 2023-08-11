@@ -1,0 +1,15 @@
+.admin-add-word-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 666px;
+}
+
+.admin-add-word-subtitle{
+    margin-bottom: 10px;
+}
+
+.admin-add-word-form-block div {
+  display: flex;
+  gap: 15px;
+}

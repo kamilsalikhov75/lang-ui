@@ -1,12 +1,18 @@
-import { icons } from './icons';
+import { icons } from "./icons";
+import { Lang } from "./store/slices/lang";
 
-export const languages = [
+interface ILanguage {
+  value: Lang;
+  icon: string;
+}
+
+export const languages: ILanguage[] = [
   {
-    value: 'ru',
+    value: "ru",
     icon: icons.ruIcon,
   },
   {
-    value: 'en',
+    value: "en",
     icon: icons.enIcon,
   },
 ];

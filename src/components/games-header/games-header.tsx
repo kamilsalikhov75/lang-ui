@@ -1,32 +1,35 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './games-header.css';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./games-header.css";
+import { useStateSelector } from "../../store/hooks";
+import { gamesHeaderMeta } from "./games-header-meta";
 
 interface IGamesHeader {
   currentTab: string | undefined;
 }
 
 function GamesHeader({ currentTab }: IGamesHeader) {
+  const nativeLang = useStateSelector((state) => state.lang.nativeLang);
   return (
     <div className="games-header">
-      <h1 className="title">Игры для изучения слов</h1>
+      <h1 className="title">{gamesHeaderMeta[nativeLang].title}</h1>
       <nav className="games-header__navigation">
         <Link
           to="/games/cards"
           className={`tab-link ${
-            currentTab === 'cards' ? 'tab-link--active' : ''
+            currentTab === "cards" ? "tab-link--active" : ""
           }`}
         >
-          Карточки
+          {gamesHeaderMeta[nativeLang].cards}
         </Link>
-        <Link
+        {/* <Link
           to="/games/translate"
           className={`tab-link ${
-            currentTab === 'translate' ? 'tab-link--active' : ''
+            currentTab === "translate" ? "tab-link--active" : ""
           }`}
         >
-          Перевод слова
-        </Link>
+          {gamesHeaderMeta[nativeLang].translate}
+        </Link> */}
       </nav>
     </div>
   );

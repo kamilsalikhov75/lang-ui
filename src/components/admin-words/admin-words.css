@@ -1,0 +1,55 @@
+.admin-words {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-word {
+  padding: 10px;
+  border: 2px solid #d5cfe1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+}
+
+.admin-word-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-word-button {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.admin-word-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-word-popup-inner{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;   
+}
+
+.admin-popup-button{
+    margin-top: 15px;
+    width: 100%;
+}

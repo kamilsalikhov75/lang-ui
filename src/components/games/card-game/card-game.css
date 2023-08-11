@@ -1,6 +1,155 @@
+.card-game {
+  width: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .card {
   width: 320px;
   height: 160px;
   background: #f8f5f0;
   border-radius: 20px;
+  padding: 15px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.card-game-buttons {
+  position: absolute;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  top: 65px;
+}
+
+.card-game-buttons button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #064789;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-game-buttons button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.card-game-buttons button:disabled:hover {
+  background-color: #064789;
+}
+
+.card-game-buttons button path {
+  fill: #f8f5f0;
+}
+
+.card-game-buttons button:hover {
+  background-color: #a491d3;
+}
+
+.prev svg {
+  transform: rotate(90deg);
+}
+.next svg {
+  transform: rotate(-90deg);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-icon-button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  transition: all 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.game-icon-button path {
+  transition: all 0.3s;
+}
+
+.game-icon-button:hover path {
+  fill: #a491d3;
+}
+
+.game-icon-button-active path {
+  fill: #be494e;
+}
+
+.card-word-block {
+  position: absolute;
+  top: 53px;
+  display: flex;
+  width: 240px;
+  left: 40px;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.card-word-block-active {
+  top: 10px;
+}
+.card-word-block-active .game-icon-button {
+  transform: scale(1, -1);
+}
+
+.card-word-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.card-translate {
+  transform: scale(-1, 1);
+}
+
+.card-translate .card-header {
+  transform: scale(-1, 1);
+}
+
+.card-translate .card-word-block {
+  transform: scale(-1, 1);
+}
+.card-translate .card-word-desc-block {
+  transform: scale(-1, 1);
+}
+
+.card-word-desc-block {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+  width: 300px;
+  height: 48px;
+  overflow-y: auto;
+  transition: bottom 0.2s;
+}
+
+.card-word-desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.card-word-block-active + .card-word-desc-block {
+  bottom: 15px;
+  opacity: 1;
+  visibility: visible;
 }

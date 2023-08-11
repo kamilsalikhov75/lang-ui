@@ -4,3 +4,10 @@
   flex-direction: column;
   gap: 20px;
 }
+.lang__block{
+  margin-bottom: 10px;
+}
+
+.lang__block .subtitle{
+  margin-bottom: 10px;
+}

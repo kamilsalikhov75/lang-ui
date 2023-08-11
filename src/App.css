@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+body:has(.auth){
+  overflow: hidden;
+}
+
 .content {
   min-height: calc(100vh - 105px);
   padding: 20px 0;
@@ -22,6 +26,7 @@
   color: #064789;
   text-decoration: none;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .link:hover {

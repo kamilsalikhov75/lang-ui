@@ -1,19 +1,22 @@
-import './lang-block.css';
-import { useState } from 'react';
-import { languages } from '../../languages';
+import "./lang-block.css";
+import { useState } from "react";
+import { languages } from "../../languages";
+import { useAppDispatch, useStateSelector } from "../../store/hooks";
+import { Lang, langActions } from "../../store/slices/lang";
 
 function LangBlock() {
-  const [currentLang, setCurrentLang] = useState('ru');
+  const currentLang = useStateSelector((state) => state.lang.learningLang);
   const [isActive, setIsActive] = useState(false);
   const currentLangObj = languages.find((item) => item.value === currentLang);
   const otherLangs = languages.filter((item) => item.value !== currentLang);
+  const dispatch = useAppDispatch();
 
   function toggleLangs() {
     setIsActive(!isActive);
   }
-
-  function setLang(lang: string) {
-    setCurrentLang(lang);
+  
+  function setLang(lang: Lang) {
+    dispatch(langActions.setLearningLang({lang}))
     setIsActive(false);
   }
 

@@ -12,7 +12,7 @@ export const likedWords = [
   {
     en: 'Word',
     ru: 'Слово',
-    _id: '2',
+    _id: '2a',
   },
   {
     en: 'Word',
